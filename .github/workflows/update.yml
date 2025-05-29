@@ -14,8 +14,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Create playlist folder
-        run: mkdir -p playlist
-        run: rm -rf playlist/*
+        run: |
+          mkdir -p playlist
+          rm -rf playlist/*
 
       - name: Read link.json and download m3u8 files
         run: |
