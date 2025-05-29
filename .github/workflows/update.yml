@@ -1,0 +1,43 @@
+name: Download M3U8 from JSON
+
+on:
+  schedule:
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+
+jobs:
+  download-m3u8:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Create playlist folder
+        run: mkdir -p playlist
+
+      - name: Install jq (JSON parser)
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Read link.json and download m3u8 files
+        run: |
+          count=$(jq length link.json)
+          for i in $(seq 0 $(($count - 1))); do
+            name=$(jq -r ".[$i].name" link.json)
+            url=$(jq -r ".[$i].url" link.json)
+
+            echo "📥 Downloading $url as $name.m3u8"
+            curl -L "$url" \
+              -H "User-Agent: Mozilla/5.0" \
+              -H "Referer: https://live.artofknot.com/" \
+              -o "playlist/$name.m3u8"
+          done
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add playlist/*.m3u8
+          git commit -m "🔁 Updated m3u8 from JSON - $(date -u +"%Y-%m-%d %H:%M:%S UTC")" || echo "No changes"
+          git push
