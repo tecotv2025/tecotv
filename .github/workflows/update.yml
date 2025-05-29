@@ -15,6 +15,7 @@ jobs:
 
       - name: Create playlist folder
         run: mkdir -p playlist
+        run: rm -rf playlist/*
 
       - name: Read link.json and download m3u8 files
         run: |
