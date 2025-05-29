@@ -1,3 +1,10 @@
+name: Download M3U8 from JSON
+
+on:
+  schedule:
+    - cron: "0 */3 * * *"
+  workflow_dispatch:
+
 jobs:
   download-m3u8:
     runs-on: ubuntu-latest
@@ -6,10 +13,8 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Prepare playlist folder
-        run: |
-          mkdir -p playlist
-          rm -rf playlist/*
+      - name: Create playlist folder
+        run: mkdir -p playlist
 
       - name: Read link.json and download m3u8 files
         run: |
