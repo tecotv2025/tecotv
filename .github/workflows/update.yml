@@ -27,10 +27,19 @@ jobs:
             curl -L "$url" -H "User-Agent: Mozilla/5.0" -H "Referer: https://live.artofknot.com/" -o "playlist/$name.m3u8"
           done
 
+      - name: Create master playlist.m3u from downloaded files
+        run: |
+          echo "#EXTM3U" > playlist.m3u
+          for file in playlist/*.m3u8; do
+            name=$(basename "$file" .m3u8)
+            echo "#EXTINF:-1,$name" >> playlist.m3u
+            echo "$file" >> playlist.m3u
+          done
+
       - name: Commit and push if changed
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add playlist/*.m3u8
-          git commit -m "🔁 Updated m3u8 from JSON - $(date -u +"%Y-%m-%d %H:%M:%S UTC")" || true
+          git add -A
+          git commit -m "🔁 Updated m3u8 files and playlist.m3u - $(date -u +"%Y-%m-%d %H:%M:%S UTC")" || true
           git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.git
