@@ -27,13 +27,13 @@ jobs:
             curl -L "$url" -H "User-Agent: Mozilla/5.0" -H "Referer: https://live.artofknot.com/" -o "playlist/$name.m3u8"
           done
 
-      - name: Create master playlist.m3u from downloaded files
+      - name: Create master playlist.m3u file
         run: |
           echo "#EXTM3U" > playlist.m3u
           for file in playlist/*.m3u8; do
             name=$(basename "$file" .m3u8)
-            echo "#EXTINF:-1,$name" >> playlist.m3u
-            echo "$file" >> playlist.m3u
+            echo "#EXTINF:-1, $name" >> playlist.m3u
+            echo "https://raw.githubusercontent.com/tecotv2025/tecotv/refs/heads/main/$file" >> playlist.m3u
           done
 
       - name: Commit and push if changed
