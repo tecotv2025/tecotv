@@ -19,6 +19,8 @@ https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Bloomberg_Ht.m
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/CNBC_E.m3u8
 #EXTINF:-1,Cnn_Turk
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Cnn_Turk.m3u8
+#EXTINF:-1,Ekol_Tv
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ekol_Tv.m3u8
 #EXTINF:-1,Eko_Turk
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Eko_Turk.m3u8
 #EXTINF:-1,Flash_Haber
