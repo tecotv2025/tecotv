@@ -1,80 +1,14 @@
-<!doctype html>
-<html lang="tr" data-bs-theme="dark">
-
-<head>
-    <!-- ? Meta -->
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Language" content="tr">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title> Teco Tv 2025</title>
-    <meta name="description" content="siz hayal edin, biz geliştirelim.. 🕊">
-    <meta name="keywords"    content="tecoiptv, tecotv2025 ">
-    <meta name="author"      content="tecotv">
-
-    <!-- ? Bootstrap CSS - Font Awesome -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <!-- ? Statik CSS -->
-    <link rel="stylesheet" href="http://94.154.32.163:1453/static/home/CSS/stil.css">
-
-    <!-- ? Favicon -->
-    <link rel="shortcut icon" href="http://94.154.32.163:1453/static/home/favicon.ico" type="image/x-icon"/>
-</head>
-
-<body class="d-flex align-items-center min-vh-100">
-
-    
-
-<h2>tecotv | 2025</h2>
-<h3><a href="https://t.me/tecotv2025" target="_blank">Tecotv 2025</a></h3>
-
-<div style="text-align: center;">
-    <a href="https://github.com/tecotv2025" target="_blank" class="hover , links-footer">
-        <i class="fab fa-github"></i>
-    </a>
-    <a href="https://linkedin.com/in/tecotv2025" target="_blank" class="hover , links-footer">
-        <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://t.me/tecotv2025" target="_blank" class="hover , links-footer">
-        <i class="fab fa-telegram"></i>
-    </a>
-    <a href="https://wa.me/90xxxxxxx" target="_blank" class="hover , links-footer">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-    <a href="https://buymeacoffee.com/tecoiptv" target="_blank" class="hover , links-footer">
-        <i class="fas fa-coffee"></i>
-    </a>
-</div>
-
-
-    <!-- ? jQuery ve Bootstrap Bundle (Popper içerir) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- ? Statik JS -->
-    <script src="http://94.154.32.163:1453/static/home/JS/bakalim.js"></script>
-
-
-
-
-<!-- ! Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
-* ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⠀⠀⠀⡀⠀⠀⠀
-* ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣷⣤⣾⡇⠀⠀⠀
-* ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣈⡛⣿⡟⠁⢀⣀⠀
-* ⠀⠀⠀⢰⡄⠀⠀⠀⠀⠀⢸⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⠿⠾⣷⣾⠿⠃⠀
-* ⠀⠀⠀⠈⣿⣦⡀⠀⠀⠀⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀
-* ⠀⠀⠀⠀⣿⣿⣿⣦⡀⠀⣿⣿⣿⣧⡀⠀⠀⠀⠀⢀⣤⣤⣤⣀⡀⠛⠀⠀⠀⠀
-* ⠀⠀⠀⠀⠘⣿⣿⣿⣿⣶⣄⠙⠻⠿⣷⡀⠀⠀⢀⣿⣿⣿⣿⣿⡿⠶⠀⠀⠀⠀
-* ⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⣿⣿⣶⣦⣤⣤⣤⣤⣾⣿⣿⡏⠉⠀⣤⠄⠀⠀⠀⠀
-* ⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠉⠀⠀⠀⠀⠀
-* ⠀⠀⠀⠀⠀⠀⠀⠀⠙⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀
-* ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-* ⠀⣼⣷⣶⣶⣶⣶⣶⣾⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-* ⠀⢻⣿⣿⣿⣿⣿⠿⠟⠛⠛⠛⠋⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-* ⠀⠘⢿⣿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-* ⠀⠀⠀⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-! -->
-</body>
-</html>
+#EXTM3U
+#EXT-X-INDEPENDENT-SEGMENTS
+#EXT-X-STREAM-INF:BANDWIDTH=269034,CODECS="mp4a.40.5,avc1.4D400C",RESOLUTION=256x144,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1763068853/ei/VfcVaZP-CamJvdIP84j_wAU/ip/94.154.32.163/id/hHSmBJk6w0c.1056/itag/91/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D139/sgovp/gir%3Dyes%3Bitag%3D160/rqh/1/hls_chunk_host/rr5---sn-4g5edndl.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/bui/AdEuB5RNGyBy2D5P4lFhqZctZL-8fEa1LS2CVYfanZ5f5fejo9v94QMc61wRGXSzgnpOkyux6CrkHuwT/spc/6b0G_NZ-VcsCs60ympXqgtJfVK8N8xpZFAwbQPFZSzAzODJ-TVfGi8_8q-iMBosD6W4/vprv/1/playlist_type/DVR/cps/171/met/1763047254,/mh/T2/mm/44/mn/sn-4g5edndl/ms/lva/mv/u/mvi/5/pl/24/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51355912,51552689,51565115,51565682,51580968/mt/1763045386/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,bui,spc,vprv,playlist_type/sig/AJfQdSswRQIhAM9IwCe-Lp3Qw1Cej6dDrywK1zTLQ2mweohvwehYRPoUAiAtub3U6C4y9PK0l-04vDHwu5zj5YfYYooUz7p_QsqwWg%3D%3D/lsparams/hls_chunk_host,cps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRQIgc_6VgPZrlFfvwjbDVzIwQJdegB1z_4IRy-aQec63ZHYCIQC9JMCP2hktX5qgOnI9jo_Lwt3uFG2ACVmlbhOHcSNe6g%3D%3D/playlist/index.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=507418,CODECS="mp4a.40.5,avc1.4D4015",RESOLUTION=426x240,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1763068853/ei/VfcVaZP-CamJvdIP84j_wAU/ip/94.154.32.163/id/hHSmBJk6w0c.1056/itag/92/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D139/sgovp/gir%3Dyes%3Bitag%3D133/rqh/1/hls_chunk_host/rr5---sn-4g5edndl.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/bui/AdEuB5RNGyBy2D5P4lFhqZctZL-8fEa1LS2CVYfanZ5f5fejo9v94QMc61wRGXSzgnpOkyux6CrkHuwT/spc/6b0G_NZ-VcsCs60ympXqgtJfVK8N8xpZFAwbQPFZSzAzODJ-TVfGi8_8q-iMBosD6W4/vprv/1/playlist_type/DVR/cps/171/met/1763047254,/mh/T2/mm/44/mn/sn-4g5edndl/ms/lva/mv/u/mvi/5/pl/24/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51355912,51552689,51565115,51565682,51580968/mt/1763045386/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,bui,spc,vprv,playlist_type/sig/AJfQdSswRQIhAIFeDjb0T2DkAp4l4hVYWU2xU2Rgv_VzknEBqglPC1WFAiBd_tP8qr2IPCiDnHxlPJ659g2EP8e0eRxSJq9qP5JmzA%3D%3D/lsparams/hls_chunk_host,cps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRgIhANh7dE7VHVNPmRz-DcvaLX40_i6okbXQ4beJVdtgUb7yAiEA7yGMbcFcMExeeMQdgefM_FKZTVfa1WcGF9t7bEhqyFE%3D/playlist/index.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=962461,CODECS="mp4a.40.2,avc1.4D401E",RESOLUTION=640x360,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1763068853/ei/VfcVaZP-CamJvdIP84j_wAU/ip/94.154.32.163/id/hHSmBJk6w0c.1056/itag/93/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D134/rqh/1/hls_chunk_host/rr5---sn-4g5edndl.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/bui/AdEuB5RNGyBy2D5P4lFhqZctZL-8fEa1LS2CVYfanZ5f5fejo9v94QMc61wRGXSzgnpOkyux6CrkHuwT/spc/6b0G_NZ-VcsCs60ympXqgtJfVK8N8xpZFAwbQPFZSzAzODJ-TVfGi8_8q-iMBosD6W4/vprv/1/playlist_type/DVR/cps/171/met/1763047254,/mh/T2/mm/44/mn/sn-4g5edndl/ms/lva/mv/u/mvi/5/pl/24/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51355912,51552689,51565115,51565682,51580968/mt/1763045386/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,bui,spc,vprv,playlist_type/sig/AJfQdSswRQIhALoFbRL_0kF-sDpI8ZPVy_yJ4M4Mt6WFA0BDWjXmcOgJAiAPUkcpavbSTarKDveDkiAut1Z781g9Eo7B_igZYtfXlg%3D%3D/lsparams/hls_chunk_host,cps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRQIhAO7si5wGcg9bhPyD_kCwzFINn2jgS1DsK3IwS6Iyqf49AiAE2sjr_Zk3dGMtidDhKmDWksegLKiOAR2KmuALVjmyNg%3D%3D/playlist/index.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1282517,CODECS="mp4a.40.2,avc1.4D401F",RESOLUTION=854x480,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1763068853/ei/VfcVaZP-CamJvdIP84j_wAU/ip/94.154.32.163/id/hHSmBJk6w0c.1056/itag/94/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D135/rqh/1/hls_chunk_host/rr5---sn-4g5edndl.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/bui/AdEuB5RNGyBy2D5P4lFhqZctZL-8fEa1LS2CVYfanZ5f5fejo9v94QMc61wRGXSzgnpOkyux6CrkHuwT/spc/6b0G_NZ-VcsCs60ympXqgtJfVK8N8xpZFAwbQPFZSzAzODJ-TVfGi8_8q-iMBosD6W4/vprv/1/playlist_type/DVR/cps/171/met/1763047254,/mh/T2/mm/44/mn/sn-4g5edndl/ms/lva/mv/u/mvi/5/pl/24/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51355912,51552689,51565115,51565682,51580968/mt/1763045386/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,bui,spc,vprv,playlist_type/sig/AJfQdSswRQIgbO-4KMaFZUbYE5RnV_E5Hcxzju_9qin7t8YGo2uqtkwCIQCEUQIzJh7OtRHkAvUYuoge-SIeB3-X2bRemMQcCv9W-Q%3D%3D/lsparams/hls_chunk_host,cps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRQIhAL6fxFKqf9WD3cNGZEYT1aoJcrv7RYEQQN2KawWTQp4tAiBi5Jf0K6HnmCRYhIlPLRYtlx1Cfq9mw8CxibRta6Q_IQ%3D%3D/playlist/index.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2447970,CODECS="mp4a.40.2,avc1.4D401F",RESOLUTION=1280x720,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1763068853/ei/VfcVaZP-CamJvdIP84j_wAU/ip/94.154.32.163/id/hHSmBJk6w0c.1056/itag/95/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D136/rqh/1/hls_chunk_host/rr5---sn-4g5edndl.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/bui/AdEuB5RNGyBy2D5P4lFhqZctZL-8fEa1LS2CVYfanZ5f5fejo9v94QMc61wRGXSzgnpOkyux6CrkHuwT/spc/6b0G_NZ-VcsCs60ympXqgtJfVK8N8xpZFAwbQPFZSzAzODJ-TVfGi8_8q-iMBosD6W4/vprv/1/playlist_type/DVR/cps/171/met/1763047254,/mh/T2/mm/44/mn/sn-4g5edndl/ms/lva/mv/u/mvi/5/pl/24/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51355912,51552689,51565115,51565682,51580968/mt/1763045386/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,bui,spc,vprv,playlist_type/sig/AJfQdSswRgIhALBZz9viG8q-kNOv1x3XBnzubo7ysq0ofNWq26YU8bbJAiEA5y-flRCexvlfLuKtE9DEfRNLDSw4n_uUMsoTqs_sZbg%3D/lsparams/hls_chunk_host,cps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRQIhANkIZlHYKAq4SxIktPhNx6rnMbe9weV841P5OztP8f95AiA6dDrfgqc9GyPnrQDMWz0Hi6THTttdludSoO-5l4Blbg%3D%3D/playlist/index.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=4561186,CODECS="mp4a.40.2,avc1.4D4028",RESOLUTION=1920x1080,FRAME-RATE=30,VIDEO-RANGE=SDR,CLOSED-CAPTIONS=NONE
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1763068853/ei/VfcVaZP-CamJvdIP84j_wAU/ip/94.154.32.163/id/hHSmBJk6w0c.1056/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr5---sn-4g5edndl.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/bui/AdEuB5RNGyBy2D5P4lFhqZctZL-8fEa1LS2CVYfanZ5f5fejo9v94QMc61wRGXSzgnpOkyux6CrkHuwT/spc/6b0G_NZ-VcsCs60ympXqgtJfVK8N8xpZFAwbQPFZSzAzODJ-TVfGi8_8q-iMBosD6W4/vprv/1/playlist_type/DVR/cps/171/met/1763047254,/mh/T2/mm/44/mn/sn-4g5edndl/ms/lva/mv/u/mvi/5/pl/24/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51355912,51552689,51565115,51565682,51580968/mt/1763045386/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,bui,spc,vprv,playlist_type/sig/AJfQdSswRQIhAOaCOP0qXr-KRIie4AtE4CN6EHqleYam3Wm_XppH8iT0AiAxjQtYk2cty7JP3D8NLCl3YHDuymIcKsoy4FZLtgjH4g%3D%3D/lsparams/hls_chunk_host,cps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRQIhAN0YHG4ap-t-bh4cNngty90YAI3oPvTHwXBeHWxo8rL5AiBttdPBBqkkt38E7EACNqts7vRhXrjB0SHGI1qAz30bYQ%3D%3D/playlist/index.m3u8
