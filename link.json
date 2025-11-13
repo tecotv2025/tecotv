@@ -7,6 +7,37 @@
     "name": "Haber_Turk",
     "url": "http://192.168.1.163/youtube/channel/UCn6dNfiRE_Xunu7iMyvD7AA.m3u8"
   },
+ {
+    "name": "Sifir_Tv",
+    "url": "http://192.168.1.163/youtube/channel/UCDX7Vf8VLBHdC-HZtKG9gOQ.m3u8"
+  },
+ {
+    "name": "Klas_Medya",
+    "url": "http://192.168.1.163/youtube/channel/UCmMFLXeeR_5Cpna78HI-96A.m3u8"
+  },
+
+{
+    "name": "Bizim_Ev_Tv",
+    "url": "http://192.168.1.163/youtube/channel/UCIHMK8qtjB_GNuXmeex6i8g.m3u8"
+  },
+
+{
+    "name": "Korku_Filmleri_Tv",
+    "url": "http://192.168.1.163/youtube/channel/UCsbpTjR1Vh0L3gvBg9d0Dbg.m3u8"
+  },
+
+  {
+    "name": "Nokta_Tv",
+    "url": "http://192.168.1.163/youtube/channel/UCQuaIes9sMK8Z0VAZsVsvxQ.m3u8"
+  },
+  {
+    "name": "Now_Spor",
+    "url": "http://192.168.1.163/youtube/channel/UCHowoDxzhyCPQBzhOpeP4-w.m3u8"
+  },
+  {
+    "name": "Klas_Medya",
+    "url": "http://192.168.1.163/youtube/channel/UCmMFLXeeR_5Cpna78HI-96A.m3u8"
+  },
   {
     "name": "NTV",
     "url": "http://192.168.1.163/youtube/channel/UC9TDTjbOjFB9jADmPhSAPsw.m3u8"
@@ -24,9 +55,23 @@
     "url": "http://192.168.1.163/youtube/channel/UCBgTP2LOFVPmq15W-RH-WXA.m3u8"
   },
     {
+    "name": "Diyanet_Cocuk",
+    "url": "http://192.168.1.163/youtube/channel/UCCfTktnzWK__FUN4gj0zIpA.m3u8"
+  },
+
+    {
     "name": "Ekol_Tv",
     "url": "http://192.168.1.163/youtube/channel/UCccxXUKSuqOrlWQxweZBAQw.m3u8"
   },
+    {
+    "name": "Ekol_Spor",
+    "url": "http://192.168.1.163/youtube/channel/UCjr2WQ5a20B5YyUY7qaa2sw.m3u8"
+  },
+ {
+    "name": "Tjk_Tv",
+    "url": "http://192.168.1.163/youtube/channel/UCNLO4lpteIloZ4IKb9L2DoA.m3u8"
+  },
+
     {
     "name": "CNBC_E",
     "url": "http://192.168.1.163/youtube/channel/UCaO-M1dXacMwtyg0Pvovk4w.m3u8"
@@ -123,7 +168,17 @@
   },
 
 {
-    "name": "Bahcelievler_Tv",
-    "url": "http://192.168.1.163/youtube/channel/UC08tPcsPH9U1zwbYlBk30zA.m3u8"
+    "name": "Somine_TV",
+    "url": "http://192.168.1.163/youtube/channel/UCaJs3QtwUWJ2u_sdQVBs4XA.m3u8"
+  },
+
+{
+    "name": "Ciftci_Tv",
+    "url": "http://192.168.1.163/youtube/channel/UCtzcebnk0sLhCBtJy7GJaCg.m3u8"
+  },
+
+{
+    "name": "Toprak_Tv",
+    "url": "http://192.168.1.163/youtube/channel/UCY5IqO_-nI9tQlYE01tU70w.m3u8"
   }
 ]
