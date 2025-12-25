@@ -1,3 +1,15 @@
 #EXTM3U
-#EXTINF:-1,*
-https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/*.m3u8
+#EXTINF:-1,Ciftci_Tv
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ciftci_Tv.m3u8
+#EXTINF:-1,Cnn_Turk
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Cnn_Turk.m3u8
+#EXTINF:-1,Haber_Turk
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Haber_Turk.m3u8
+#EXTINF:-1,Klas_Medya
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Klas_Medya.m3u8
+#EXTINF:-1,Sifir_Tv
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Sifir_Tv.m3u8
+#EXTINF:-1,Somine_TV
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Somine_TV.m3u8
+#EXTINF:-1,Toprak_Tv
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Toprak_Tv.m3u8
