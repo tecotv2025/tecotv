@@ -1,3 +1,10 @@
-#EXTM3U
-#EXTINF:-1,*
-https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/*.m3u8
+#EXTINF:-1,TRT_Haber
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/TRT_Haber.m3u8
+#EXTINF:-1,TRT_Haber
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/TRT_Haber.m3u8
+#EXTINF:-1,Yol_Tv
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Yol_Tv.m3u8
+#EXTINF:-1,TV_100
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/TV_100.m3u8
+#EXTINF:-1,TV_100
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/TV_100.m3u8
