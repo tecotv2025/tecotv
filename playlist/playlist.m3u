@@ -67,8 +67,6 @@ https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Tele_1.m3u8
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Tgrt_Belgesel.m3u8
 #EXTINF:-1,Tjk_Tv
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Tjk_Tv.m3u8
-#EXTINF:-1,Toprak_Tv
-https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Toprak_Tv.m3u8
 #EXTINF:-1,TRT_Haber
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/TRT_Haber.m3u8
 #EXTINF:-1,TV_100
@@ -77,8 +75,6 @@ https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/TV_100.m3u8
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Tv_Net.m3u8
 #EXTINF:-1,Ulke_Tv
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ulke_Tv.m3u8
-#EXTINF:-1,Ulusal_Kanal
-https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ulusal_Kanal.m3u8
 #EXTINF:-1,Yesilcam_Tv
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Yesilcam_Tv.m3u8
 #EXTINF:-1,Yol_Tv
