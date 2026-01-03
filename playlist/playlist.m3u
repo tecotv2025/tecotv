@@ -15,8 +15,6 @@ https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Benguturk_Tv.m
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Bizim_Ev_Tv.m3u8
 #EXTINF:-1,Bloomberg_Ht
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Bloomberg_Ht.m3u8
-#EXTINF:-1,Ciftci_Tv
-https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ciftci_Tv.m3u8
 #EXTINF:-1,CNBC_E
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/CNBC_E.m3u8
 #EXTINF:-1,Cnn_Turk
@@ -67,8 +65,6 @@ https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Tele_1.m3u8
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Tgrt_Belgesel.m3u8
 #EXTINF:-1,Tjk_Tv
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Tjk_Tv.m3u8
-#EXTINF:-1,Toprak_Tv
-https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Toprak_Tv.m3u8
 #EXTINF:-1,TRT_Haber
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/TRT_Haber.m3u8
 #EXTINF:-1,TV_100
