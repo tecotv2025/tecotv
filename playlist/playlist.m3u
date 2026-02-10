@@ -11,6 +11,8 @@ https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Akit_Tv.m3u8
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Bein_Spor_Haber.m3u8
 #EXTINF:-1,Benguturk_Tv
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Benguturk_Tv.m3u8
+#EXTINF:-1,Bizim_Ev_Tv
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Bizim_Ev_Tv.m3u8
 #EXTINF:-1,Bloomberg_Ht
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Bloomberg_Ht.m3u8
 #EXTINF:-1,CNBC_E
@@ -33,8 +35,12 @@ https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Flash_Haber.m3
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Haber_Global_TV.m3u8
 #EXTINF:-1,Haber_Turk
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Haber_Turk.m3u8
+#EXTINF:-1,Halk_Tv
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Halk_Tv.m3u8
 #EXTINF:-1,Ht_Spor
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ht_Spor.m3u8
+#EXTINF:-1,Kemal_Sunal_Tv
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Kemal_Sunal_Tv.m3u8
 #EXTINF:-1,Klas_Medya
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Klas_Medya.m3u8
 #EXTINF:-1,Korku_Filmleri_Tv
