@@ -3,6 +3,8 @@
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/24_Tv.m3u8
 #EXTINF:-1,A_Spor
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/A_Spor.m3u8
+#EXTINF:-1,A_haber
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/A_haber.m3u8
 #EXTINF:-1,Akit_Tv
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Akit_Tv.m3u8
 #EXTINF:-1,Bein_Spor_Haber
@@ -13,6 +15,8 @@ https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Benguturk_Tv.m
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Bizim_Ev_Tv.m3u8
 #EXTINF:-1,Bloomberg_Ht
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Bloomberg_Ht.m3u8
+#EXTINF:-1,CNBC_E
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/CNBC_E.m3u8
 #EXTINF:-1,Ciftci_Tv
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ciftci_Tv.m3u8
 #EXTINF:-1,Cnn_Turk
@@ -53,6 +57,8 @@ https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Now_Spor.m3u8
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/ShowMax.m3u8
 #EXTINF:-1,Sifir_Tv
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Sifir_Tv.m3u8
+#EXTINF:-1,Somine_TV
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Somine_TV.m3u8
 #EXTINF:-1,Sozcu_Tv
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Sozcu_Tv.m3u8
 #EXTINF:-1,TRT_Haber
