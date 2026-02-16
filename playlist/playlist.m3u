@@ -23,6 +23,8 @@ https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ciftci_Tv.m3u8
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Cnn_Turk.m3u8
 #EXTINF:-1,Diyanet_Cocuk
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Diyanet_Cocuk.m3u8
+#EXTINF:-1,Eko_Turk
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Eko_Turk.m3u8
 #EXTINF:-1,Ekol_Spor
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ekol_Spor.m3u8
 #EXTINF:-1,Ekol_Tv
@@ -37,6 +39,8 @@ https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Haber_Turk.m3u
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Halk_Tv.m3u8
 #EXTINF:-1,Ht_Spor
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ht_Spor.m3u8
+#EXTINF:-1,Kemal_Sunal_Tv
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Kemal_Sunal_Tv.m3u8
 #EXTINF:-1,Klas_Medya
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Klas_Medya.m3u8
 #EXTINF:-1,Korku_Filmleri_Tv
