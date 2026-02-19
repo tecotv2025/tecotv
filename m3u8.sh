@@ -1,49 +1,52 @@
 #!/bin/bash
-# Proje dizinine git
-cd /root/tecotv/
+
+PROJE_DIR="/root/tecotv"
+cd $PROJE_DIR || exit 1
+
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
-# Git Güvenlik Ayarı: "Detached HEAD" hatalarını önlemek için
-git checkout main || git checkout -b main
-
-# Gereken paketleri kur (Zaten yüklüyse hızlı geçer)
-sudo apt update -qq
-sudo apt install -y jq curl git > /dev/null
-
-# Playlist klasörünü oluştur ve temizle
+# Playlist Hazırlığı
 mkdir -p playlist
 rm -f playlist/*.m3u8
 
-# M3U8 dosyalarını indir
+# Kanalları işle
 cat link.json | jq -c '.[]' | while read -r i; do
     name=$(echo "$i" | jq -r '.name')
-    url=$(echo "$i" | jq -r '.url')
-    echo "📥 $name indiriliyor..."
-    curl -sSL "$url" \
-        -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)" \
-        -H "Referer: https://live.artofknot.com/" \
-        -o "playlist/${name}.m3u8"
+    target_url=$(echo "$i" | jq -r '.url')
+    
+    echo ">>> $name için Yönlendirme Linki alınıyor..."
+
+    # -I: Sadece başlıkları (headers) çek
+    # grep -i "location:": Location satırını bul
+    # sed: 'location:' kelimesini sil ve temiz linki bırak
+    raw_manifest=$(curl -sI "$target_url" | grep -i "location:" | sed 's/[Ll]ocation: //g' | tr -d '\r' | xargs)
+
+    if [ ! -z "$raw_manifest" ] && [[ "$raw_manifest" == http* ]]; then
+        echo "#EXTM3U" > "playlist/${name}.m3u8"
+        echo "#EXT-X-VERSION:3" >> "playlist/${name}.m3u8"
+        echo "$raw_manifest" >> "playlist/${name}.m3u8"
+        echo " [OK] $name güncellendi."
+    else
+        echo " [!] HATA: $name için yönlendirme adresi alınamadı!"
+        echo " Denenen URL: $target_url"
+    fi
 done
 
-# Ana playlist.m3u dosyasını oluştur
-echo "#EXTM3U" > playlist.m3u
+# Ana Playlist Oluştur (GitHub Raw Linkleri ile)
+echo "#EXTM3U" > playlist/playlist.m3u
 for file in playlist/*.m3u8; do
     [ -e "$file" ] || continue
-    name=$(basename "$file" .m3u8)
-    echo "#EXTINF:-1,$name" >> playlist.m3u
-    echo "https://raw.githubusercontent.com/tecotv2025/tecotv/main/$file" >> playlist.m3u
+    fname=$(basename "$file" .m3u8)
+    echo "#EXTINF:-1,$fname" >> playlist/playlist.m3u
+    echo "https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/${fname}.m3u8" >> playlist/playlist.m3u
 done
 
-# Dosyayı taşı
-mv playlist.m3u playlist/playlist.m3u
-
-# --- GİT İŞLEMLERİ ---
+# GitHub Push
 git add .
-# Eğer değişiklik varsa commit et
 if ! git diff-index --quiet HEAD --; then
-    git commit -m "✅ Playlist dosyaları güncellendi: $(date)"
-    # GitHub'a her zaman ana dal üzerinden zorla gönder
+    git commit -m "Manifest Redirect Update: $(date +'%H:%M')"
     git push origin HEAD:main --force
+    echo ">>> GitHub'a gönderildi."
 else
-    echo "Değişiklik yok, push atlanıyor."
+    echo ">>> Değişiklik yok."
 fi
