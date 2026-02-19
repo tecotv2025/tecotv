@@ -5,7 +5,7 @@ cd $PROJE_DIR || exit 1
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
-# Playlist Hazırlığı
+# Playlist Klasör Hazırlığı
 mkdir -p playlist
 rm -f playlist/*.m3u8
 
@@ -14,30 +14,33 @@ cat link.json | jq -c '.[]' | while read -r i; do
     name=$(echo "$i" | jq -r '.name')
     target_url=$(echo "$i" | jq -r '.url')
     
-    echo ">>> $name güncelleniyor..."
+    echo ">>> $name için Header üzerinden link alınıyor..."
 
-    # 1. Yöntem: Direkt yönlendirme başlığını (Location) çekmeyi dene
-    # --max-time ekledik çünkü YouTube bazen geç yanıt verir
-    raw_manifest=$(curl -sI --max-time 15 "$target_url" | grep -i "location:" | sed 's/[Ll]ocation: //g' | tr -d '\r' | xargs)
-
-    # 2. Yöntem: Eğer Location boşsa, içeriği indirip içinden linki ayıkla (Fallback)
-    if [ -z "$raw_manifest" ]; then
-        echo "    [!] Başlık alınamadı, içerik taranıyor..."
-        raw_manifest=$(curl -sL --max-time 20 "$target_url" | grep -oE "https://manifest.googlevideo.com/[^ ]+" | head -n 1 | tr -d '\r' | xargs)
-    fi
+    # ÖNEMLİ: -L (yönlendirme) KULLANMIYORUZ. Sadece -I (Header) alıyoruz.
+    # grep ile Location satırını bulup temizliyoruz.
+    raw_manifest=$(curl -sI --max-time 20 "$target_url" | grep -i "^location:" | awk '{print $2}' | tr -d '\r' | xargs)
 
     if [ ! -z "$raw_manifest" ] && [[ "$raw_manifest" == http* ]]; then
         echo "#EXTM3U" > "playlist/${name}.m3u8"
         echo "#EXT-X-VERSION:3" >> "playlist/${name}.m3u8"
         echo "$raw_manifest" >> "playlist/${name}.m3u8"
-        echo "    [OK] $name başarıyla alındı."
+        echo " [OK] $name başarıyla yakalandı."
     else
-        echo "    [!!] HATA: $name linki hiçbir yöntemle çekilemedi!"
+        echo " [!] HATA: $name için Header linki boş döndü!"
+        # Alternatif deneme (Bazen küçük-büyük harf fark eder)
+        raw_manifest=$(curl -sI "$target_url" | grep -i "Location:" | cut -d' ' -f2- | tr -d '\r' | xargs)
+        if [ ! -z "$raw_manifest" ]; then
+             echo "#EXTM3U" > "playlist/${name}.m3u8"
+             echo "$raw_manifest" >> "playlist/${name}.m3u8"
+             echo " [OK] $name (Alternatif) yakalandı."
+        fi
     fi
+    # Sunucuya aşırı yüklenmemek için küçük bir es
+    sleep 1
 done
 
 # Ana Playlist Oluştur
-echo ">>> Ana liste hazırlanıyor..."
+echo ">>> Ana playlist oluşturuluyor..."
 echo "#EXTM3U" > playlist/playlist.m3u
 for file in playlist/*.m3u8; do
     [ -e "$file" ] || continue
@@ -46,9 +49,12 @@ for file in playlist/*.m3u8; do
     echo "https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/${fname}.m3u8" >> playlist/playlist.m3u
 done
 
-# GitHub
+# GitHub Push
 git add .
 if ! git diff-index --quiet HEAD --; then
-    git commit -m "Hibrit Güncelleme: $(date +'%H:%M')"
+    git commit -m "Fixed Header Fetch: $(date +'%H:%M')"
     git push origin HEAD:main --force
+    echo ">>> GitHub'a başarıyla gönderildi."
+else
+    echo ">>> Değişiklik yok, push atlanıyor."
 fi
